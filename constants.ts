@@ -16,9 +16,9 @@ export const PRODUCTS: Product[] = [
     longDescription: 'Le Loft Lagunaire est une ode à la sérénité d\'Abidjan. S\'étendant sur 150 mètres carrés, il dispose d\'une terrasse en bois d\'ébène, d\'une piscine à débordement privée et de baies vitrées offrant une vue imprenable sur Yopougon et ses lumières. Parfait pour se ressourcer au son du clapotis de l\'eau.',
     price: 450,
     category: 'Home',
-    imageUrl: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: '/images/residence-1.jpeg',
     gallery: [
-      'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1200'
+      '/images/residence-1.jpeg'
     ],
     features: ['Accès Ponton Privé', 'Majordome 24/7', 'Artisanat Local']
   },
@@ -30,9 +30,9 @@ export const PRODUCTS: Product[] = [
     longDescription: 'Perché au dernier étage, ce penthouse redéfinit le luxe à Yopougon. Une cuisine de chef, un salon de dégustation de café ivoirien et une suite parentale avec vue à 360° sur la ville et la lagune. Un espace conçu pour les leaders et les esthètes.',
     price: 1200,
     category: 'Home',
-    imageUrl: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: '/images/residence-2.jpeg',
     gallery: [
-        'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=1200'
+        '/images/residence-2.jpeg'
     ],
     features: ['Piscine de Toit', 'Sécurité Renforcée', 'Conciergerie Elite']
   },
@@ -44,9 +44,9 @@ export const PRODUCTS: Product[] = [
     longDescription: 'La Suite Ebène utilise des matériaux nobles de la forêt ivoirienne pour créer une ambiance feutrée et protectrice. Équipée de systèmes audio haute fidélité pour écouter les rythmes du pays en toute quiétude.',
     price: 350,
     category: 'Home',
-    imageUrl: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: '/images/residence-3.jpeg',
     gallery: [
-        'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&q=80&w=1200'
+        '/images/residence-3.jpeg'
     ],
     features: ['Système Audio Spatial', 'Literie en Coton Bio', 'Parfum Signature']
   },
@@ -58,9 +58,9 @@ export const PRODUCTS: Product[] = [
     longDescription: 'Parfait pour les séjours d\'affaires ou les escapades créatives, ce studio offre un balcon privé surplombant les quartiers dynamiques de Yopougon.',
     price: 280,
     category: 'Home',
-    imageUrl: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: '/images/residence-4.jpeg',
     gallery: [
-        'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1200'
+        '/images/residence-4.jpeg'
     ],
     features: ['Espace Travail', 'Mini-bar Gourmet', 'Lumière Naturelle']
   }
@@ -342,7 +342,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
         title: "Abidjan, Ville de Lumière",
         date: "15 Mai 2025",
         excerpt: "Pourquoi Yopougon devient la nouvelle frontière de l'hôtellerie de luxe.",
-        image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&q=80&w=1000",
+        image: "/images/journal-1.jpeg",
         content: React.createElement(React.Fragment, null,
             React.createElement("p", { className: "mb-6 first-letter:text-5xl first-letter:font-serif first-letter:mr-3 first-letter:float-left text-[#1E3A8A]" },
                 "Souad Residences n'est pas seulement un hôtel, c'est une célébration de la vitalité abidjanaise. Entre modernité insolente et douceur lagunaire, nous avons choisi Yopougon pour son âme authentique."

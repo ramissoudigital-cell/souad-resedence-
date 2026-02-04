@@ -92,7 +92,7 @@ const ExperienceBuilder: React.FC<ExperienceBuilderProps> = ({ isNightMode }) =>
           </div>
 
           <div className={`relative aspect-square lg:aspect-video rounded-3xl overflow-hidden shadow-2xl group border transition-all duration-1000 ${isNightMode ? 'border-blue-900/50' : 'border-blue-100'}`}>
-             <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&q=80&w=1200" alt="Atmosphère chambre" className={`w-full h-full object-cover transition-all duration-[10s] group-hover:scale-110 ${isNightMode ? 'brightness-50 grayscale' : ''}`} />
+             <img src="/images/experience.jpeg" alt="Atmosphère chambre" className={`w-full h-full object-cover transition-all duration-[10s] group-hover:scale-110 ${isNightMode ? 'brightness-50 grayscale' : ''}`} />
              <div className="absolute inset-0 bg-blue-900/10 mix-blend-multiply"></div>
              <div className="absolute bottom-10 left-10 text-white">
                 <span className={`text-[10px] uppercase tracking-widest block mb-2 font-bold ${isNightMode ? 'text-blue-400' : 'text-white/70'}`}>Aperçu en temps réel</span>

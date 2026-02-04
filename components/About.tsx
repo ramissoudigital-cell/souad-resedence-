@@ -27,7 +27,7 @@ const About: React.FC<AboutProps> = ({ isNightMode }) => {
             À Yopougon, nous avons créé un havre de paix où le bois d'ébène, le grès et les textiles naturels se marient à la lumière changeante de la lagune Ébrié.
           </p>
           <img 
-            src="https://images.unsplash.com/photo-1507652313519-d4511f7ca4ad?auto=format&fit=crop&q=80&w=1200" 
+            src="/images/about.jpeg" 
             alt="Intérieur luxe Abidjan" 
             className={`w-full h-[400px] object-cover mt-12 rounded-2xl shadow-lg transition-all duration-[1000ms] ${isNightMode ? 'grayscale brightness-[0.25] opacity-70' : 'grayscale brightness-110'}`}
           />

@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ onBookNow, isNightMode }) => {
     <section className={`relative w-full h-screen min-h-[700px] md:min-h-[800px] overflow-hidden transition-colors duration-1000 ${isNightMode ? 'bg-[#020617]' : 'bg-blue-900'}`}>
       <div className="absolute inset-0 w-full h-full animate-zoom-slow">
         <img 
-            src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=2000" 
+            src="/images/hero.jpg" 
             alt="Souad Residences Abidjan" 
             className={`w-full h-full object-cover grayscale transition-all duration-[2000ms] ${isNightMode ? 'brightness-[0.2] contrast-125' : 'contrast-[0.8] brightness-[0.9]'}`}
         />
