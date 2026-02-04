@@ -44,7 +44,7 @@ export const sendMessageToGemini = async (history: {role: string, text: string}[
   try {
     const apiKey = process.env.API_KEY;
     if (!apiKey || apiKey === "undefined") {
-      return { text: "Le service de conciergerie est momentanément indisponible car la clé API n'est pas configurée. Si vous êtes sur Vercel, vérifiez vos variables d'environnement." };
+      return { text: "Le service de conciergerie est en attente de configuration. Si vous venez de déployer sur Vercel, assurez-vous d'avoir ajouté la variable d'environnement API_KEY dans vos paramètres de projet." };
     }
 
     const ai = new GoogleGenAI({ apiKey });
@@ -64,7 +64,7 @@ export const sendMessageToGemini = async (history: {role: string, text: string}[
   } catch (error: any) {
     console.error("Erreur API Gemini:", error);
     if (error.message?.includes("API key not valid")) {
-      return { text: "Votre clé API Google Gemini semble invalide. Veuillez vérifier sa validité sur Google AI Studio." };
+      return { text: "La clé API configurée semble invalide. Veuillez vérifier votre clé sur Google AI Studio." };
     }
     return { text: "Désolé, je rencontre une difficulté technique pour vous répondre actuellement." };
   }
@@ -139,6 +139,6 @@ export const generateAbidjanItinerary = async (mood: string, duration: string): 
     });
     return response.text || "L'Oracle est silencieux.";
   } catch (e) {
-    return "Erreur de connexion avec l'Oracle. Vérifiez votre clé API.";
+    return "Erreur de connexion avec l'Oracle. Vérifiez votre configuration.";
   }
 };
